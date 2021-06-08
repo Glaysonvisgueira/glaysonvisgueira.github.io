@@ -1,88 +1,31 @@
 <!DOCTYPE html>
 <html>
   <style>
-    .background{
-    background-color: rgb(129, 189, 169);
-}
-
-.container{
-    position: absolute;
-    width: 100%;
-    height: 100%;
     
-}
-
-.paragrafo{
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    width: 50%;
-    text-align: center;
-    -webkit-transform: translateY( -50% );
-    -moz-transform: translateY( -50% );
-    transform: translateY( -50% );
-}
-
-
-#menu ul {
-    padding:0px;
-    margin-top: 20px;
-    margin-left: 30px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: bold; 
-     
-}
-
-#menu ul li { 
-    display: inline; 
-}
-
-#menu ul li a {
-    padding: 5px 10px;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;   
-}
-
-#menu ul li a:hover {
-    background-color: rgb(189, 235, 219);
-    transition: 0.2s;
-    color: #000000;
-    border-bottom:5px solid rgb(13, 182, 125);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.7);
-    
-}
   </style>
   <head>
     <meta charset="utf-8">
     
     <title>Minha página de teste</title>
+    <link rel="stylesheet" type="text/css" href="./src/static/css/style.css" />
   </head>
-  <body class="background">
-    <nav id="menu">
-        <ul >
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SOBRE</a></li>
-            <li><a href="#">SKILLS</a></li>
-            <li><a href="#">CONTATOS</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <p class="paragrafo">
-          Lorem Ipsum is simply dummy text of the printing and 
-          typesetting industry. Lorem Ipsum has been the industry's 
-          standard dummy text ever since the 1500s, when an 
-          unknown printer took a galley of type and scrambled 
-          it to make a type specimen book. It has survived not 
-          only five centuries, but also the leap into electronic 
-          typesetting, remaining essentially unchanged. It was
-           popularised in the 1960s with the release of Letraset 
-           sheets containing Lorem Ipsum passages, and more recently
-            with desktop publishing software like Aldus PageMaker
-             including versions of Lorem Ipsum.
-        </p>
-    </div>
+  <body>   
+        <div class="containerPage">
+           <div class="menuNavbar">
+                <a href="#">HOME</a>
+                <a href="#">SOBRE</a>
+                <a href="#">SKILLS</a>
+                <a href="#">CONTATOS</a>
+           </div>
+           <div class="landing">
+                    <p>Versão 1.1</p>
+           </div>
+           <div class="footer">
+            <p class="footerText">Versão 1.1</p>
+           </div>
+        </div>
+            
+        
+    
   </body>
 </html>
