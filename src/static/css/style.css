@@ -608,12 +608,31 @@ footer span {
 
 .grid-portifolio {
     display: grid;
+    width: 70%;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 
 .card-projeto {
-    background-color: antiquewhite;
-    width: 100px;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #f2f2f2;
+    width: 80%;
+    height: 80px;
+    border-bottom: 5px solid transparent;
+    border-radius: 0px;
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    margin: auto;
+}
+
+.card-projeto:hover {
+    border-bottom: 5px solid #00FFC2;
+    border-radius: 0px;
+    padding: 10px;
+    transform: scale(1.1);
+    z-index: 1;
 }
