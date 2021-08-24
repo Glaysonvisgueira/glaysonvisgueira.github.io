@@ -6,21 +6,40 @@
 
     <title>Dev | Glayson Visgueira</title>
     <link rel="stylesheet" type="text/css" href="./src/static/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
+<script>
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+</script>
 
 <body>
     <div class="containerPage" id="homepage">
         <a href="#homepage" class="button-scroll-up">
             <img src="./src/static/img/arrow-up.png" alt="Seta para cima" width=30 height=30>
         </a>
+        <div class="header">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
         <div class="navbar-container alinharCentro">
             <a class="texto-link">HOME</a>
             <a href="#section-one" class="texto-link">SOBRE</a>
-            <a href="#section-two" class="texto-link">TECHS</a>
+            <a href="#section-two" class="texto-link">EXPERIÊNCIA</a>
             <a href="#section-three" class="texto-link">PORTIFÓLIO</a>
-            <a href="#section-four" class="texto-link">CURSOS</a>
+            <a href="#section-four" class="texto-link">FORMAÇÃO E CURSOS</a>
         </div>
-        <div class="landing-container">
+        <div class="landing-container animate__animated animate__fadeIn">
             <div class="landing-text">
                 <h1>OLÁ, SEJA<br /> BEM VINDO(A)! </h1>
                 <span>Lorem Ipsum is simply dummy text of the<br /> printing and typesetting industry.</span>
@@ -36,19 +55,32 @@
         <div class="background-section-one">
 
         </div>
-        <div class="card-sobre-mim">
+        <div class="card-sobre-mim animate__animated animate__fadeInUp">
             <div class="left-info">
-                <img src="./src/static/img/imagem-perfil.jpg" alt="Imagem de perfil" width=250 height=250 style="border-radius: 300px;" />
+                <img src="./src/static/img/imagem-perfil.jpg" alt="Imagem de perfil" width=320 height=320 style="border-radius: 300px;" />
                 <div class="container-info">
 
-                    <div>
-                        <span>Icone</span>
-                        <span>pergunta</span>
+
+                    <div id="skills" style="width: 100%;">
+                        <h3>HABILIDADES</h3>
+                        <p>BACKEND</p>
+                        <div class="container-skill-progress">
+                            <div class="skills backend">90%</div>
+                        </div>
+
+                        <p>FRONTEND</p>
+                        <div class="container-skill-progress">
+                            <div class="skills frontend">80%</div>
+                        </div>
+
+                        <p>MOBILE</p>
+                        <div class="container-skill-progress">
+                            <div class="skills mobile">65%</div>
+                        </div>
                     </div>
-                    <span>Resposta</span>
 
                 </div>
-                <button class="download-curriculo">DOWNLOAD CURRÍCULO</button>
+                <!--  <button class="download-curriculo">DOWNLOAD CURRÍCULO</button> -->
             </div>
             <div class="right-info">
                 <div class="container-title-sobre-mim">
@@ -116,12 +148,13 @@
             <img src="./src/static/img/arrow-down.png" class="opacity-hover" alt="Seta para baixo" width=60 height=60 style="position: absolute; bottom: 50px; cursor: pointer; z-index: 1;">
         </a>
 
+
     </section>
 
-    <section id="section-three" class="container-section">
-        <div class="container-title-experiencia">
+    <section id="section-three" class="container-section-three">
+        <div class="container-title-portifolio">
             <div class="title-sobre-mim">
-                <img src="./src/static/img/reading.png" alt="Info" width=50 height=50 />
+                <img src="./src/static/img/setting.png" alt="Info" width=50 height=50 />
                 <h2 class="title">PORTIFÓLIO DE PROJETOS</h2><br/>
             </div>
             <div id="linha-horizontal"></div>
@@ -130,15 +163,66 @@
             <img src="./src/static/img/arrow-down.png" class="opacity-hover" alt="Seta para baixo" width=60 height=60 style="position: absolute; bottom: 50px; cursor: pointer; z-index: 1;">
         </a>
 
+        <div class="grid-portifolio">
+            <div class="card-projeto">
+                <span>as</span>
+            </div>
+            <div class="card-projeto">
+                <span>as</span>
+            </div>
+            <div class="card-projeto">
+                <span>as</span>
+            </div>
+        </div>
+
     </section>
 
-    <section id="section-four" class="container-section">
+    <section id="section-four" class="container-section-four">
+
         <div class="container-title-experiencia">
             <div class="title-sobre-mim">
-                <img src="./src/static/img/reading.png" alt="Info" width=50 height=50 />
-                <h2 class="title">CURSOS</h2><br/>
+                <img src="./src/static/img/timeline.png" alt="Info" width=50 height=50 />
+                <h2 class="title">FORMAÇÃO E CURSOS</h2><br/>
             </div>
             <div id="linha-horizontal"></div>
+        </div>
+
+        <div style="width: 100%;">
+            <div class="timeline">
+                <div class="container-timeline left">
+                    <div class="content">
+                        <h2>2017</h2>
+                        <p>Instituição</p>
+                        <p>Tipo</p>
+                        <p>Descrição</p>
+                    </div>
+                </div>
+                <div class="container-timeline right">
+                    <div class="content">
+                        <h2>2016</h2>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+                <div class="container-timeline left">
+                    <div class="content">
+                        <h2>2016</h2>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+                <div class="container-timeline right">
+                    <div class="content">
+                        <h2>2016</h2>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+                <div class="container-timeline left">
+                    <div class="content">
+                        <h2>2016</h2>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </section>
