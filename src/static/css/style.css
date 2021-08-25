@@ -621,7 +621,7 @@ footer span {
 .grid-portifolio {
     display: grid;
     width: 70%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
 
@@ -667,7 +667,8 @@ footer span {
 
 .techs{
     display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
