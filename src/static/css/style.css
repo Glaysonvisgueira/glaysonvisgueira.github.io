@@ -205,7 +205,7 @@ a::-moz-selection {
     display: flex;
     width: 100%;
     height: 100vh;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     position: relative;
@@ -370,9 +370,8 @@ a::-moz-selection {
     align-items: center;
     width: 100%;
     height: 30px;
-    background-color: #00FFC2;
-    position: absolute;
-    bottom: 0;
+    background-color: #00FFC2;  
+    margin-top: 100px;  
 }
 
 footer span {
@@ -394,8 +393,8 @@ footer span {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    top: 20px;
-    position: absolute;
+    margin-top: 20px;
+   
 }
 
 .container-title-portifolio {
@@ -599,11 +598,24 @@ footer span {
 }
 
 .timeline h2 {
+    display: flex;
+    align-items: center;
+    justify-content: f;
     font-weight: 900;
+    font-size: 30px;
+    color: #212121;    
+    padding: 4px;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
 .timeline p {
-    font-weight: 200;
+    font-weight: 700;
+}
+
+
+.timeline span {
+    font-weight: 300;
 }
 
 .grid-portifolio {
@@ -616,23 +628,55 @@ footer span {
 .card-projeto {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
     position: relative;
     background-color: #f2f2f2;
-    width: 80%;
-    height: 80px;
-    border-bottom: 5px solid transparent;
-    border-radius: 0px;
+    width: 80%;    
+    border: 5px solid transparent;
+    border-radius: 8px;
     padding: 10px;
-    transition: all .2s ease-in-out;
-    cursor: pointer;
-    margin: auto;
+    transition: all .2s ease-in-out;    
+    margin: auto;    
 }
 
-.card-projeto:hover {
-    border-bottom: 5px solid #00FFC2;
-    border-radius: 0px;
-    padding: 10px;
-    transform: scale(1.1);
-    z-index: 1;
+
+.grid-portifolio .card-projeto h2{
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #212121;
+    border-bottom: 2px solid transparent;
+}
+
+.grid-portifolio .card-projeto h2:hover{
+   border-bottom: 2px solid #212121;
+}
+
+
+.grid-portifolio .card-projeto p{
+    font-weight: 400;
+    font-size: 14px;
+}   
+
+
+.grid-portifolio .card-projeto span{
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.techs{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.techs span{
+    margin: 4px;
+}
+
+
+.link-projeto {   
+    cursor: pointer;    
+    text-decoration: none;
 }
