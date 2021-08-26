@@ -639,7 +639,7 @@ footer span {
 
 .card-projeto {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
     position: relative;
@@ -661,6 +661,24 @@ footer span {
 box-shadow: 0px 0px 40px -7px #00FFC2;
 }
 
+.tipo-projeto{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+}
+
+
+.tipo-projeto-text{
+    color: #fff;
+    border-radius: 4px;
+    padding: 0px 4px;
+    font-weight: 700;
+    font-size: 10px;
+    background-color: #212121;
+    text-decoration: none;
+}
+
 
 .grid-portifolio .card-projeto h2{
     font-weight: 900;
@@ -679,9 +697,10 @@ box-shadow: 0px 0px 40px -7px #00FFC2;
 }   
 
 
-.grid-portifolio .card-projeto span{
-    font-weight: 200;
+.techs-text{
+    font-weight: 400;
     font-size: 12px;
+    color: #212121;
     
 }
 
@@ -693,6 +712,6 @@ box-shadow: 0px 0px 40px -7px #00FFC2;
 }
 
 .techs span{
-    margin: 4px;
+   color: #212121;
 }
 
