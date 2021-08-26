@@ -653,6 +653,7 @@ footer span {
     margin: auto; 
     cursor: pointer;   
     text-decoration: none;
+    min-height: 200px;
     
 }
 
@@ -663,8 +664,8 @@ box-shadow: 0px 0px 40px -7px #00FFC2;
 
 .tipo-projeto{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: -5px;
+    right: 0px;
     
 }
 
@@ -683,6 +684,7 @@ box-shadow: 0px 0px 40px -7px #00FFC2;
 .grid-portifolio .card-projeto h2{
     font-weight: 900;
     font-size: 20px;
+    margin-top: 5px;
     margin-bottom: 5px;
     color: #212121;
        
