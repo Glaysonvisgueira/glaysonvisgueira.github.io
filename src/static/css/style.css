@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 body {
@@ -191,10 +192,19 @@ a::-moz-selection {
     position: relative;
 }
 
+.container-section-two {
+    display: flex;
+    width: 100%;    
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
 .container-section-three {
     display: flex;
     width: 100%;
-    height: 100vh;
+    
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -403,8 +413,8 @@ footer span {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    top: 20px;
-    position: absolute;
+    margin-top: 20px;
+   
 }
 
 .container-skill-progress {
@@ -620,9 +630,11 @@ footer span {
 
 .grid-portifolio {
     display: grid;
-    width: 70%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    margin-top: 50px;
+    width: 80%;
+    height: 60%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 
 .card-projeto {
@@ -632,12 +644,21 @@ footer span {
     flex-direction: column;
     position: relative;
     background-color: #f2f2f2;
-    width: 80%;    
+    width: 100%;
+    height: 100%;    
     border: 5px solid transparent;
     border-radius: 8px;
     padding: 10px;
     transition: all .2s ease-in-out;    
-    margin: auto;    
+    margin: auto; 
+    cursor: pointer;   
+    text-decoration: none;
+    
+}
+
+.card-projeto:hover{
+    -webkit-box-shadow: 0px 0px 40px -7px #00FFC2; 
+box-shadow: 0px 0px 40px -7px #00FFC2;
 }
 
 
@@ -646,23 +667,22 @@ footer span {
     font-size: 20px;
     margin-bottom: 5px;
     color: #212121;
-    border-bottom: 2px solid transparent;
+       
 }
 
-.grid-portifolio .card-projeto h2:hover{
-   border-bottom: 2px solid #212121;
-}
 
 
 .grid-portifolio .card-projeto p{
     font-weight: 400;
     font-size: 14px;
+   
 }   
 
 
 .grid-portifolio .card-projeto span{
     font-weight: 200;
     font-size: 12px;
+    
 }
 
 .techs{
@@ -676,8 +696,3 @@ footer span {
     margin: 4px;
 }
 
-
-.link-projeto {   
-    cursor: pointer;    
-    text-decoration: none;
-}
