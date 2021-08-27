@@ -661,6 +661,8 @@ footer span {
     text-decoration: none;
     min-width: 50%;
     min-height: 200px;   
+    border-left: 15px solid #00FFC2;
+    
 }
 
 .tipo-projeto{
