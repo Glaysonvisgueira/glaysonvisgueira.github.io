@@ -4,8 +4,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    scroll-behavior: smooth;
+    
     text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -235,8 +239,9 @@ a::-moz-selection {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: rgb(240, 240, 240);
-    border-radius: 8px;
+    max-width: 200px;
+    max-height: 220px;
+    background-color: rgb(240, 240, 240);    
     padding: 20px;   
     transition: all .2s ease-in-out;
     cursor: pointer;
@@ -244,8 +249,8 @@ a::-moz-selection {
 }
 
 .item-experiencia:hover{
-    margin-top: -20px;
-}
+    transform: scale(1.1);
+} 
 
 
 .item-experiencia-text{
