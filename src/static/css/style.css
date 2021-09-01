@@ -2,18 +2,22 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     text-decoration: none;
 }
 
 html{
     scroll-behavior: smooth;
+    /*Cada 1rem será considerado 10px*/
+    font-size: 62.5%;
 }
 
 body {
     background-color: #212121;
+    
 }
 
 body::-webkit-scrollbar {
@@ -130,7 +134,7 @@ a::-moz-selection {
 
 .texto-link {
     color: #fff;
-    font-size: 18px;
+    font-size: 1.8rem;
     margin: 20px;
     cursor: pointer;
     font-weight: 700;
@@ -180,14 +184,14 @@ a::-moz-selection {
 }
 
 .landing-container h1 {
-    font-size: 64px;
+    font-size: 7rem;
     color: #fff;
     font-weight: 900;
     letter-spacing: 5px;
 }
 
 .landing-container span {
-    font-size: 24px;
+    font-size: 2.2rem;
     margin-top: 20px;
     color: #fff;
     font-weight: 200;
@@ -257,7 +261,7 @@ a::-moz-selection {
     font-weight: 700;
     margin-top: 20px;
     color: #212121;    
-    font-size: 20px;    
+    font-size: 2rem;    
 }
 
 
@@ -324,7 +328,7 @@ a::-moz-selection {
     font-weight: 700;
     color: #fff;
     margin-left: 30px;
-    font-size: 30px;
+    font-size: 2.8rem;
 }
 
 .container-title-sobre-mim {
@@ -361,7 +365,7 @@ a::-moz-selection {
     color: #fff;
     font-weight: 200;
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .container-footer-sobre-mim {
@@ -419,7 +423,7 @@ a::-moz-selection {
     margin-top: 60px;
     font-weight: 700;
     color: #212121;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .download-curriculo:hover {
@@ -452,7 +456,7 @@ footer span {
 
 .title {
     font-weight: 900;
-    font-size: 20px;
+    font-size: 2rem;
     margin-left: 15px;
     color: #fff;
 }
@@ -488,10 +492,12 @@ footer span {
     text-align: right;
     color: #212121;
     font-weight: 900;
+    font-size: 1.4rem;
 }
 
 #skills p {
     color: #fff;
+    font-size: 1.4rem;
     font-weight: 900;
     margin-bottom: 5px;
     margin-top: 10px;
@@ -500,6 +506,7 @@ footer span {
 #skills h3 {
     color: #fff;
     font-weight: 900;
+    font-size: 1.8rem;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -670,9 +677,9 @@ footer span {
 .timeline h2 {
     display: flex;
     align-items: center;
-    justify-content: f;
+    justify-content: flex-start;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 2.8rem;
     color: #212121;    
     padding: 4px;
     border-radius: 4px;
@@ -681,11 +688,13 @@ footer span {
 
 .timeline p {
     font-weight: 700;
+    font-size: 1.5rem;
 }
 
 
 .timeline span {
     font-weight: 300;
+    font-size: 1.5rem;
 }
 
 .container-portifolio {
@@ -726,7 +735,7 @@ footer span {
     border-radius: 4px;
     padding: 0px 4px;
     font-weight: 700;
-    font-size: 12px;
+    font-size:1.2rem;
     background-color: #212121;
     text-decoration: none;
 }
@@ -734,7 +743,7 @@ footer span {
 
 .container-portifolio .card-projeto h2{
     font-weight: 900;
-    font-size: 20px;
+    font-size: 2rem;
     margin-top: 5px;
     margin-bottom: 5px;
     color: #212121;
@@ -745,14 +754,14 @@ footer span {
 
 .container-portifolio .card-projeto p{
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #212121; 
 }   
 
 
 .techs-text{
     font-weight: 400;
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #212121;
     
 }
@@ -775,3 +784,9 @@ footer span {
     border-bottom: 1px solid #212121;
 }
 
+
+@media (max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+}
