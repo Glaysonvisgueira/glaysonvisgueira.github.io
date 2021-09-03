@@ -223,6 +223,11 @@ a::-moz-selection {
     position: relative;
 }
 
+.social-media-icons{
+    width: 40px;
+    height: 40px;
+}
+
 .container-section-two {
     display: flex;
     width: 100%;    
@@ -1337,17 +1342,55 @@ footer span {
         position: relative;
     }
 
+    .skills {
+        text-align: right;
+        color: #212121;
+        font-weight: 900;
+        font-size: 3.4rem;
+       
+    }
+    
+    #skills p {
+        color: #fff;
+        font-size: 2.4rem;
+        font-weight: 900;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    
+    #skills h3 {
+        color: #fff;
+        font-weight: 900;
+        font-size: 3.8rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
     .grid-experiencia{
         display: grid;        
         margin-top: 50px;
-        grid-template-columns: repeat(3, 1fr);        
+        grid-template-columns: repeat(1, 1fr);        
         margin: auto;        
     }
+
+    
+.container-title-experiencia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
+   
+}
+
+
 
     .item-experiencia img{
         width: 100%;
         height: 100%;
     }
+
     
     .item-experiencia{
         display: flex;
@@ -1372,7 +1415,7 @@ footer span {
         bottom: 5px;
         font-weight: 900;       
         color: #212121;    
-        font-size: 2rem;    
+        font-size: 3.6rem;    
     }
 
     .landing-container {
@@ -1437,7 +1480,7 @@ footer span {
     .background-section-one {
         background-color: #00FFC2;
         width: 100%;
-        height: 30vh;
+        height: 40vh;
         position: absolute;
         top: 0px;
     }
@@ -1448,7 +1491,7 @@ footer span {
         justify-content: space-between;
         align-items: center;
         background-color: #3A3A3A;
-        width: 90%;
+        width: 95%;
         height: 95vh;        
         margin: auto;   
         overflow: hidden;
@@ -1466,8 +1509,8 @@ footer span {
     }
 
     .imagem-perfil{
-        width: 220px;
-        height: 220px;
+        width: 150px;
+        height: 150px;
         border-radius: 300px;
     }
     
@@ -1482,15 +1525,15 @@ footer span {
         z-index: 1;
     }
     .info-image{
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
     }
     
     .right-info h2 {
         font-weight: 900;
         color: #fff;
         margin-left: 10px;
-        font-size: 1.8rem;
+        font-size: 3.8rem;
     }
     
     .container-title-sobre-mim {
@@ -1507,19 +1550,28 @@ footer span {
         justify-content: flex-start;
         align-items: flex-end;
         flex-direction: row;
-        width: 95%;
+        width: 100%;
+        font-size: 3rem;
+        
+    }
+
+    .title {
+        font-weight: 900;
+        font-size: 4rem;
+        margin-left: 15px;
+        color: #fff;
     }
     
     #linha-horizontal {
         width: 100%;
-        margin-top: 15px;
+        margin-top: 5px;
         border: 1px solid #00FFC2;
         background-color: #00FFC2;
         
     }
     
     .container-paragrafo-sobre-mim {
-        width: 100%;
+        width: 95%;
         text-align: justify;
     }
     
@@ -1527,7 +1579,12 @@ footer span {
         color: #fff;
         font-weight: 200;
         margin-top: 10px;
-        font-size: 1.8rem;
+        font-size: 3.2rem;
+    }
+
+    .social-media-icons{
+        width: 26px;
+        height: 26px;
     }
     
     .container-footer-sobre-mim {
@@ -1535,7 +1592,7 @@ footer span {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 100%;          
+        width: 90%;          
     }
     
     .container-footer-sobre-mim img {
@@ -1548,27 +1605,9 @@ footer span {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 80%;
+        width: 70%;
         
-    }
-    
-    .download-curriculo {
-        width: 50%;
-        height: 44px;
-        background-color: #00FFC2;
-        border-radius: 4px;
-        border: none;
-        cursor: pointer;
-        font-weight: bold;
-        margin-top: 60px;
-        font-weight: 700;
-        color: #212121;
-        font-size: 1.6rem;
     }    
-    
-    .left-info img {
-        margin-top: 30px;
-    }
     
     .container-footer {
         display: flex;
@@ -1598,14 +1637,14 @@ footer span {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         margin-top: 20px;
        
     }
 
     .experiencia-img{
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
 
     .container-portifolio {
@@ -1626,12 +1665,12 @@ footer span {
         background-color: rgb(240, 240, 240);
         padding: 15px;
         transition: all .2s ease-in-out;    
-        margin: 5px;   
+        margin-bottom: 5px;   
         text-decoration: none;
         min-width: 100%;
         max-width: 100%;
         min-height: 200px;   
-        border-left: 15px solid #00FFC2;   
+        border-left: 10px solid #00FFC2;   
         border-radius: 4px;     
     }
     
@@ -1654,7 +1693,7 @@ footer span {
         border-radius: 4px;
         padding: 0px 4px;
         font-weight: 700;
-        font-size:1.5rem;
+        font-size: 3.0rem;
         background-color: #212121;
         text-decoration: none;
     }
@@ -1662,7 +1701,7 @@ footer span {
     
     .container-portifolio .card-projeto h2{
         font-weight: 900;
-        font-size: 2.4rem;
+        font-size: 4.2rem;
         margin-top: 5px;
         margin-bottom: 5px;
         color: #212121;
@@ -1673,7 +1712,7 @@ footer span {
     
     .container-portifolio .card-projeto p{
         font-weight: 400;
-        font-size: 1.8rem;
+        font-size: 3.4rem;
         color: #212121; 
         text-align: left;
     }   
@@ -1681,7 +1720,7 @@ footer span {
     
     .techs-text{
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         color: #212121;
         
     }
@@ -1698,7 +1737,7 @@ footer span {
         color:#212121;
         font-weight: 700;
         text-decoration: none;
-        font-size: 1.8rem;
+        font-size: 3rem;
     }
 
     .container-footer {
@@ -1716,6 +1755,30 @@ footer span {
         color: #212121;
         font-weight: 700;
         margin-left: 30px;
-        font-size: 1.8rem;
+        font-size: 3.8rem;
     }
+
+
+.timeline h2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 900;
+    font-size: 5rem;
+    color: #212121;    
+    padding: 4px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.timeline p {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+
+.timeline span {
+    font-weight: 300;
+    font-size: 4rem;
+}
 }
