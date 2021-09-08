@@ -692,7 +692,7 @@ footer span {
 
     .arrow-down-next-page{        
         position: absolute;
-        bottom: 20px;
+        bottom: 15px;
         cursor: pointer;
         width: 20px;
         height: 20px
@@ -771,7 +771,7 @@ footer span {
     .landing-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         width: 95%;
         height: 80%;
@@ -780,7 +780,7 @@ footer span {
     .landing-container img{
         
         width: 50%;
-        height: 60%;
+        height: 50%;
         margin-bottom: 30px;
     }
 
@@ -863,6 +863,7 @@ footer span {
         z-index: 1;
     }
     .info-image{
+        z-index: 1;
         width: 30px;
         height: 30px;
     }
