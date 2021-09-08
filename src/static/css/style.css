@@ -674,8 +674,8 @@ footer span {
     border-bottom: 6px solid #00FFC2;
 }
 
-/*Tablets*/
-@media (max-width: 1366px){
+/*Laptop*/
+@media (max-width: 1400px){
     html{
         font-size: 50%;
     }
