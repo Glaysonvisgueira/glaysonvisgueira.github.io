@@ -168,6 +168,13 @@ a::-moz-selection {
     align-items: flex-start;
 }
 
+.container-portifolio .card-projeto p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #212121; 
+    text-align: left;
+}   
+
 .landing-botao {
     width: 100%;
     height: 44px;
@@ -224,8 +231,8 @@ a::-moz-selection {
 }
 
 .social-media-icons{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .container-section-two {
@@ -282,6 +289,13 @@ a::-moz-selection {
     font-size: 2rem;    
 }
 
+.arrow-down-next-page{
+    position: absolute;
+    bottom: 50px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px
+}
 
 
 .container-section-three {
@@ -343,15 +357,15 @@ a::-moz-selection {
 }
 
 .info-image{
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
 }
 
 .right-info h2 {
     font-weight: 700;
     color: #fff;
-    margin-left: 30px;
-    font-size: 2.8rem;
+    margin-left: 10px;
+    font-size: 2.2rem;
 }
 
 .container-title-sobre-mim {
@@ -368,11 +382,11 @@ a::-moz-selection {
     justify-content: flex-start;
     align-items: flex-end;
     flex-direction: row;
-    width: 80%;
+    width: 90%;
 }
 
 #linha-horizontal {
-    width: 100%;
+    width: 90%;
     margin-top: 15px;
     border: 2px solid #00FFC2;
     background-color: #00FFC2;
@@ -395,7 +409,7 @@ a::-moz-selection {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
+    width: 60%;
     margin-bottom: 60px;
 }
 
@@ -692,10 +706,10 @@ footer span {
 
     .arrow-down-next-page{        
         position: absolute;
-        bottom: 15px;
+        bottom: 20px;
         cursor: pointer;
-        width: 20px;
-        height: 20px
+        width: 34px;
+        height: 34px
     }
 
     .button-scroll-up {
@@ -728,6 +742,12 @@ footer span {
         align-items: center;
         flex-direction: column;
         position: relative;
+    }
+
+    
+    .social-media-icons{
+        width: 26px;
+        height: 26px;
     }
 
     .grid-experiencia{
@@ -773,14 +793,14 @@ footer span {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        width: 95%;
+        width: 80%;
         height: 80%;
     }
     
     .landing-container img{
         
-        width: 50%;
-        height: 50%;
+        width: 400px;
+        height: 400px;
         margin-bottom: 30px;
     }
 
@@ -889,7 +909,7 @@ footer span {
         justify-content: flex-start;
         align-items: flex-end;
         flex-direction: row;
-        width: 95%;
+        width: 100%;
     }
     
     #linha-horizontal {
@@ -917,7 +937,7 @@ footer span {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 80%;     
+        width: 40%;     
         margin-top: 30px;     
     }
     
@@ -1056,7 +1076,7 @@ footer span {
     
     .container-portifolio .card-projeto p{
         font-weight: 400;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         color: #212121; 
         text-align: left;
     }   
@@ -1081,7 +1101,7 @@ footer span {
         color:#212121;
         font-weight: 700;
         text-decoration: none;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .container-footer {
@@ -1221,12 +1241,7 @@ footer span {
 }
 
 
-
-.container-portifolio .card-projeto p{
-    font-weight: 400;
-    font-size: 1.4rem;
-    color: #212121; 
-}   
+  
 
 
 .techs-text{
@@ -1248,6 +1263,8 @@ footer span {
     color:#212121;
     font-weight: 700;
     text-decoration: none;
+    font-size: 1.4rem;
+    border-bottom: 1px solid transparent;
 }
 
 .codigo-fonte-link:hover{
@@ -1259,13 +1276,7 @@ footer span {
     height: 30px;
 }
 
-.arrow-down-next-page{
-    position: absolute;
-    bottom: 50px;
-    cursor: pointer;
-    width: 60px;
-    height: 60px
-}
+
 
 /*Tablets*/
 @media (max-width: 768px){
